@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 id="heading">Math Quiz</h2>
+    <div class="quiz">
+      <div class="qsn">
+        <div id="question" class="qsnAns">&nbsp;</div>
+        <!-- <input id="answer">sdfs</div> -->
+        <input
+          type="text"
+          name="answer"
+          class="qsnAns"
+          id="answer"
+          inputmode="numeric"
+          pattern="[0-9]*"
+          autocomplete="off"
+          placeholder="Enter your answer here"
+        />
+        <div id="buttons">
+          <button type="button" class="submitBtns" id="re-generate">
+            Re-Generate
+          </button>
+          <button type="submit" class="submitBtns" id="submit">Submit</button>
+        </div>
+      </div>
+      <div class="levels">
+        <button type="button" class="btns">Easy</button>
+        <button type="button" class="btns">Medium</button>
+        <button type="button" class="btns">Hard</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
